@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buyer & Seller Checklist – Manuela Acevedo</title>
+  <meta name="description" content="Simple buyer and seller checklists to guide your real estate journey with Manuela Acevedo, Licensed Real Estate Salesperson.">
+  <meta property="og:title" content="Buyer & Seller Checklist – Manuela Acevedo">
+  <meta property="og:description" content="Simple buyer and seller checklists to guide your real estate journey.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta name="theme-color" content="#d4af37">
+  <style>
+    :root {
+      --gold: #d4af37; /* neutral gold */
+      --dark: #1a1a1a;
+      --muted: #666;
+      --border: #e6e6e6;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --shadow: 0 10px 25px rgba(0,0,0,0.06);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--dark); }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      padding: 28px 20px;
+      border-bottom: 2px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(6px);
+      z-index: 10;
+    }
+    .container { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+    .brand {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .title {
+      font-size: 20px; font-weight: 700; letter-spacing: 0.3px;
+    }
+    .subtitle { color: var(--muted); font-size: 14px; margin-top: 2px; }
+    .contact {
+      display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; justify-content: flex-end;
+      font-size: 14px;
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px;
+      border: 1px solid var(--border); border-radius: 999px; background: #fff; box-shadow: var(--shadow);
+    }
+    .goldline { height: 3px; width: 100%; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 10px 0 0; border-radius: 3px; }
+    main { padding: 28px 0 60px; }
+    .grid {
+      display: grid; grid-template-columns: 1fr; gap: 22px;
+    }
+    @media (min-width: 880px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 18px 8px;
+      box-shadow: var(--shadow);
+    }
+    .card h2 { margin: 4px 2px 8px; font-size: 20px; }
+    .hint { color: var(--muted); font-size: 13px; margin: 4px 2px 16px; }
+    ul.checklist { list-style: none; padding: 0; margin: 0; }
+    li.item {
+      display: grid; grid-template-columns: 28px 1fr auto; gap: 12px; align-items: start;
+      padding: 10px 8px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 10px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    li.item:hover { background: #fafafa; border-color: #ddd; }
+    .item input[type="checkbox"] {
+      width: 20px; height: 20px; margin-top: 2px; accent-color: var(--gold);
+    }
+    .label { font-size: 15px; line-height: 1.35; }
+    .pill {
+      font-size: 12px; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted);
+    }
+    .toolbar {
+      display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 16px 2px 2px;
+    }
+    .btn {
+      appearance: none; border: 1px solid var(--border); background: #fff; padding: 10px 14px;
+      border-radius: 12px; cursor: pointer; font-weight: 600; box-shadow: var(--shadow);
+    }
+    .btn:hover { border-color: #ddd; }
+    .btn.gold { border-color: var(--gold); color: #704f00; }
+    .footer {
+      margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px;
+    }
+    .nav {
+      display: flex; gap: 14px; margin-top: 10px; flex-wrap: wrap;
+    }
+    .nav a { display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 999px; box-shadow: var(--shadow); background: #fff; }
+    .sr-only { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div>
+          <div class="title">Buyer &amp; Seller Checklist</div>
+          <div class="subtitle">Created for you by <strong>Manuela Acevedo</strong>, Licensed Real Estate Salesperson</div>
+        </div>
+        <div class="contact">
+          <span class="badge">📞 <a href="tel:+19176827543">917‑682‑7543</a></span>
+          <span class="badge">✉️ <a href="mailto:Manuela@ExitRealtyConnections.com">Manuela@ExitRealtyConnections.com</a></span>
+          <a class="badge" href="open-house.html" title="Open House RSVP">🏠 Open House RSVP</a>
+        </div>
+      </div>
+      <div class="goldline" aria-hidden="true"></div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="grid">
+      <section class="card" aria-labelledby="buyers-title">
+        <h2 id="buyers-title">Buyer Checklist</h2>
+        <p class="hint">Tap to check off tasks. Your progress saves automatically on this device.</p>
+        <ul class="checklist" id="buyers-list">
+          <!-- Items injected by JS -->
+        </ul>
+        <div class="toolbar">
+          <button class="btn" id="buyers-clear">Clear Buyer Progress</button>
+        </div>
+      </section>
+      <section class="card" aria-labelledby="sellers-title">
+        <h2 id="sellers-title">Seller Checklist</h2>
+        <p class="hint">Stay organized as you prepare, list, and close.</p>
+        <ul class="checklist" id="sellers-list">
+          <!-- Items injected by JS -->
+        </ul>
+        <div class="toolbar">
+          <button class="btn" id="sellers-clear">Clear Seller Progress</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="footer">
+      <div class="nav">
+        <a href="open-house.html">Open House RSVP</a>
+        <a href="mailto:Manuela@ExitRealtyConnections.com">Email Manuela</a>
+        <a href="tel:+19176827543">Call Manuela</a>
+      </div>
+      <p style="margin: 10px 2px 0;">This simple, private checklist stores your progress in your browser only (no accounts or tracking).</p>
+    </section>
+  </main>
+
+  <script>
+    // --- Checklist Data ---
+    const buyers = [
+      "Get pre-approved for a mortgage",
+      "Determine your budget and must-haves",
+      "Schedule home tours",
+      "Make an offer and negotiate terms",
+      "Complete home inspection and appraisal",
+      "Secure final mortgage approval",
+      "Do a final walkthrough",
+      "Closing day and key handoff"
+    ];
+
+    const sellers = [
+      "Choose your listing price with your agent",
+      "Make key repairs and declutter/stage",
+      "Schedule professional photos & media",
+      "List your property on the market",
+      "Host open houses and private showings",
+      "Review offers and negotiate terms",
+      "Buyer inspections & appraisal",
+      "Close the sale and hand over keys"
+    ];
+
+    // --- Utilities ---
+    const $ = (sel) => document.querySelector(sel);
+    function makeKey(group, idx) { return `checklist:${group}:${idx}` }
+
+    function renderList(el, items, group) {
+      el.innerHTML = "";
+      items.forEach((label, idx) => {
+        const key = makeKey(group, idx);
+        const saved = localStorage.getItem(key) === "1";
+
+        const li = document.createElement("li");
+        li.className = "item";
+
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.id = `${group}-${idx}`;
+        cb.checked = saved;
+        cb.addEventListener("change", () => {
+          localStorage.setItem(key, cb.checked ? "1" : "0");
+        });
+
+        const lab = document.createElement("label");
+        lab.className = "label";
+        lab.setAttribute("for", cb.id);
+        lab.textContent = label;
+
+        const pill = document.createElement("span");
+        pill.className = "pill";
+        pill.textContent = group === "buyers" ? "Buyer" : "Seller";
+
+        li.appendChild(cb);
+        li.appendChild(lab);
+        li.appendChild(pill);
+
+        el.appendChild(li);
+      });
+    }
+
+    function clearGroup(group, length) {
+      for (let i = 0; i < length; i++) {
+        localStorage.removeItem(makeKey(group, i));
+      }
+    }
+
+    // --- Init ---
+    const buyersList = $("#buyers-list");
+    const sellersList = $("#sellers-list");
+    renderList(buyersList, buyers, "buyers");
+    renderList(sellersList, sellers, "sellers");
+
+    $("#buyers-clear").addEventListener("click", () => {
+      if (confirm("Clear Buyer progress?")) {
+        clearGroup("buyers", buyers.length);
+        renderList(buyersList, buyers, "buyers");
+      }
+    });
+    $("#sellers-clear").addEventListener("click", () => {
+      if (confirm("Clear Seller progress?")) {
+        clearGroup("sellers", sellers.length);
+        renderList(sellersList, sellers, "sellers");
+      }
+    });
+  </script>
+</body>
+</html>

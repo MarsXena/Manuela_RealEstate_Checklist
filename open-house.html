@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open House RSVP – Manuela Acevedo</title>
+  <meta name="description" content="RSVP for open house events hosted by Manuela Acevedo, Licensed Real Estate Salesperson.">
+  <meta name="theme-color" content="#d4af37">
+  <style>
+    :root {
+      --gold: #d4af37;
+      --dark: #1a1a1a;
+      --muted: #666;
+      --border: #e6e6e6;
+      --bg: #ffffff;
+      --card: #ffffff;
+      --shadow: 0 10px 25px rgba(0,0,0,0.06);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--dark); }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      padding: 28px 20px;
+      border-bottom: 2px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(6px);
+      z-index: 10;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 16px; }
+    .brand { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .title { font-size: 20px; font-weight: 700; }
+    .subtitle { color: var(--muted); font-size: 14px; margin-top: 2px; }
+    .badge { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid var(--border); border-radius:999px; background:#fff; box-shadow: var(--shadow); }
+    .goldline { height:3px; width:100%; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin:10px 0 0; border-radius:3px; }
+    main { padding: 28px 0 60px; }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px;
+      box-shadow: var(--shadow); margin-bottom: 22px;
+    }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+    @media (min-width: 860px) {
+      .grid { grid-template-columns: 1.2fr 1fr; }
+    }
+    label { display:block; font-weight:600; margin: 10px 0 4px; }
+    input, textarea { width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:12px; font-size:14px; }
+    .row { display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .btn { appearance:none; border:1px solid var(--border); background:#fff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:600; box-shadow:var(--shadow); }
+    .btn.gold { border-color: var(--gold); color:#704f00; }
+    .hint { color: var(--muted); font-size: 13px; }
+    .footer { margin-top: 20px; color: var(--muted); font-size: 13px; }
+    iframe { width: 100%; min-height: 580px; border: 1px solid var(--border); border-radius: 12px; background: #fff; }
+    .nav { display:flex; gap:12px; flex-wrap: wrap; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div>
+          <div class="title">Open House RSVP</div>
+          <div class="subtitle">Hosted by <strong>Manuela Acevedo</strong>, Licensed Real Estate Salesperson</div>
+        </div>
+        <div class="nav">
+          <a class="badge" href="index.html">← Buyer/Seller Checklist</a>
+          <span class="badge">📞 <a href="tel:+19176827543">917-682-7543</a></span>
+          <span class="badge">✉️ <a href="mailto:Manuela@ExitRealtyConnections.com">Manuela@ExitRealtyConnections.com</a></span>
+        </div>
+      </div>
+      <div class="goldline" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <section class="card">
+        <h2 style="margin:6px 0 10px;">RSVP Form</h2>
+        <p class="hint">Embed the Google Form you create in this space. In Google Forms: <em>Send → &lt;&gt; Embed</em>, copy the HTML and paste it where indicated below.</p>
+        <!-- ↓↓↓ Paste your Google Form embed code inside the iframe replacement below ↓↓↓ -->
+        <!-- Example placeholder:
+        <iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true">Loading…</iframe>
+        -->
+        <div style="border:1px dashed #d9d9d9; border-radius:12px; padding:18px; text-align:center;">
+          <p style="margin:0 0 8px;">Google Form not embedded yet.</p>
+          <p class="hint" style="margin:0;">Paste your <strong>&lt;iframe&gt;</strong> embed code here.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 style="margin:6px 0 10px;">Add to Calendar</h2>
+        <p class="hint">Fill the details and click a button below to create a Calendar event.</p>
+
+        <label for="title">Event Title</label>
+        <input id="title" placeholder="Open House – 123 Main St">
+
+        <div class="row">
+          <div>
+            <label for="start">Start (Local)</label>
+            <input id="start" type="datetime-local">
+          </div>
+          <div>
+            <label for="end">End (Local)</label>
+            <input id="end" type="datetime-local">
+          </div>
+        </div>
+
+        <label for="location">Location</label>
+        <input id="location" placeholder="123 Main St, YourTown, NY">
+
+        <label for="details">Details (optional)</label>
+        <textarea id="details" rows="3" placeholder="Join us for an open house hosted by Manuela Acevedo."></textarea>
+
+        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn gold" id="gen-google">Open in Google Calendar</button>
+          <a class="btn" id="google-link" href="#" target="_blank" rel="noopener" style="display:none;">Open in Google Calendar</a>
+
+          <button class="btn gold" id="gen-ics">Download .ics</button>
+          <a class="btn" id="ics-link" href="#" download="open-house.ics" style="display:none;">Download .ics</a>
+        </div>
+
+        <div class="footer">
+          Tip: After generating, you can copy the link or share the downloaded .ics file with invitees.
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    function pad(n){ return n.toString().padStart(2, '0'); }
+    function toGoogleDatetimeLocal(dt){
+      // Convert local datetime (no TZ) to UTC basic format YYYYMMDDTHHMMSSZ
+      const d = new Date(dt);
+      const yyyy = d.getUTCFullYear();
+      const MM = pad(d.getUTCMonth()+1);
+      const DD = pad(d.getUTCDate());
+      const hh = pad(d.getUTCHours());
+      const mm = pad(d.getUTCMinutes());
+      const ss = pad(d.getUTCSeconds());
+      return `${yyyy}${MM}${DD}T${hh}${mm}${ss}Z`;
+    }
+    function esc(s){
+      return encodeURIComponent(s || "").replace(/%20/g, "+");
+    }
+    function formatICSDate(dt){
+      // iCalendar uses UTC or local without 'Z'. We'll export UTC with 'Z' to avoid TZ ambiguity.
+      const d = new Date(dt);
+      const yyyy = d.getUTCFullYear();
+      const MM = pad(d.getUTCMonth()+1);
+      const DD = pad(d.getUTCDate());
+      const hh = pad(d.getUTCHours());
+      const mm = pad(d.getUTCMinutes());
+      const ss = pad(d.getUTCSeconds());
+      return `${yyyy}${MM}${DD}T${hh}${mm}${ss}Z`;
+    }
+    function nowStamp(){
+      const d = new Date();
+      const yyyy = d.getUTCFullYear();
+      const MM = pad(d.getUTCMonth()+1);
+      const DD = pad(d.getUTCDate());
+      const hh = pad(d.getUTCHours());
+      const mm = pad(d.getUTCMinutes());
+      const ss = pad(d.getUTCSeconds());
+      return `${yyyy}${MM}${DD}T${hh}${mm}${ss}Z`;
+    }
+
+    document.getElementById("gen-google").addEventListener("click", () => {
+      const title = document.getElementById("title").value || "Open House with Manuela Acevedo";
+      const start = document.getElementById("start").value;
+      const end = document.getElementById("end").value;
+      const location = document.getElementById("location").value || "";
+      const details = document.getElementById("details").value || "Join us for an open house event!";
+
+      if(!start || !end){
+        alert("Please provide start and end date/time.");
+        return;
+      }
+      const dates = `${toGoogleDatetimeLocal(start)}/${toGoogleDatetimeLocal(end)}`;
+      const base = "https://calendar.google.com/calendar/u/0/r/eventedit";
+      const url = `${base}?text=${esc(title)}&dates=${dates}&details=${esc(details)}&location=${esc(location)}`;
+
+      const a = document.getElementById("google-link");
+      a.href = url;
+      a.style.display = "inline-flex";
+      a.textContent = "Open in Google Calendar";
+      a.click();
+    });
+
+    document.getElementById("gen-ics").addEventListener("click", () => {
+      const title = document.getElementById("title").value || "Open House with Manuela Acevedo";
+      const start = document.getElementById("start").value;
+      const end = document.getElementById("end").value;
+      const location = document.getElementById("location").value || "";
+      const details = document.getElementById("details").value || "Join us for an open house event!";
+      if(!start || !end){
+        alert("Please provide start and end date/time.");
+        return;
+      }
+      const dtStart = formatICSDate(start);
+      const dtEnd = formatICSDate(end);
+      const dtStamp = nowStamp();
+      const uid = `open-house-${Date.now()}@manuela-acevedo`;
+
+      // Build .ics content per RFC5545 (CRLF line endings)
+      const lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//BuyerSellerChecklist//OpenHouse//EN",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "BEGIN:VEVENT",
+        `UID:${uid}`,
+        `DTSTAMP:${dtStamp}`,
+        `DTSTART:${dtStart}`,
+        `DTEND:${dtEnd}`,
+        `SUMMARY:${title.replace(/\n/g, " ")}`,
+        `DESCRIPTION:${details.replace(/\n/g, " ")}`,
+        `LOCATION:${location.replace(/\n/g, " ")}`,
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ];
+      const content = lines.join("\r\n") + "\r\n";
+      const blob = new Blob([content], { type: "text/calendar;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.getElementById("ics-link");
+      a.href = url;
+      a.style.display = "inline-flex";
+      a.click();
+      // Revoke after a delay to allow download
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+    });
+  </script>
+</body>
+</html>
